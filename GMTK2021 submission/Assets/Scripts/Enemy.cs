@@ -2,17 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Enemy : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public abstract class Enemy : MonoBehaviour {
+    public int worth = 1;
+    public GameObject Bullet_Style;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    protected abstract void Shoot();
 }
