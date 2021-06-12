@@ -117,7 +117,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 208d762930115f343af1d0b0190e478c, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -134,3 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddba8feffd8924640baae3a883a549e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
+  on_hit_speed_loss: 0.15
+  throw_speed: 3
+  isConnected: 1
