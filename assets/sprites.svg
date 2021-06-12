@@ -28,8 +28,8 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="1.0078125"
-     inkscape:cx="531.84496"
-     inkscape:cy="419.22481"
+     inkscape:cx="509.02326"
+     inkscape:cy="362.66667"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1272"
@@ -42,6 +42,82 @@
      inkscape:snap-smooth-nodes="true" />
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient27921">
+      <stop
+         style="stop-color:#ff6b6b;stop-opacity:1"
+         offset="0"
+         id="stop27917" />
+      <stop
+         style="stop-color:#d40000;stop-opacity:1"
+         offset="1"
+         id="stop27919" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient26456">
+      <stop
+         style="stop-color:#912828;stop-opacity:1"
+         offset="0"
+         id="stop26452" />
+      <stop
+         style="stop-color:#d35f5f;stop-opacity:1;"
+         offset="0.48350573"
+         id="stop26850" />
+      <stop
+         style="stop-color:#d35f5f;stop-opacity:1;"
+         offset="0.54953355"
+         id="stop26848" />
+      <stop
+         style="stop-color:#d35f5f;stop-opacity:1;"
+         offset="0.59621012"
+         id="stop26846" />
+      <stop
+         style="stop-color:#ebb6b6;stop-opacity:1"
+         offset="0.79952192"
+         id="stop26780" />
+      <stop
+         style="stop-color:#c53636;stop-opacity:1"
+         offset="1"
+         id="stop26454" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient25116">
+      <stop
+         style="stop-color:#650000;stop-opacity:1"
+         offset="0"
+         id="stop25112" />
+      <stop
+         style="stop-color:#aa0000;stop-opacity:1;"
+         offset="0.41029623"
+         id="stop25892" />
+      <stop
+         style="stop-color:#aa0000;stop-opacity:1;"
+         offset="0.49096447"
+         id="stop25696" />
+      <stop
+         style="stop-color:#aa0000;stop-opacity:1;"
+         offset="0.5940057"
+         id="stop25826" />
+      <stop
+         style="stop-color:#ff0404;stop-opacity:1"
+         offset="1"
+         id="stop25114" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient23972">
+      <stop
+         style="stop-color:#cebfbf;stop-opacity:1"
+         offset="0"
+         id="stop23968" />
+      <stop
+         style="stop-color:#ac9393;stop-opacity:1"
+         offset="1"
+         id="stop23970" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient47546">
@@ -1315,6 +1391,298 @@
        x2="51.329009"
        y2="85.857742"
        gradientUnits="userSpaceOnUse" />
+    <meshgradient
+       inkscape:collect="always"
+       id="meshgradient7029"
+       gradientUnits="userSpaceOnUse"
+       x="26.25926"
+       y="86.821289">
+      <meshrow
+         id="meshrow18114">
+        <meshpatch
+           id="meshpatch18116">
+          <stop
+             path="c 1.07283,0  2.14566,0  3.2185,0"
+             style="stop-color:#ffffff;stop-opacity:1"
+             id="stop18118" />
+          <stop
+             path="c 0.0668617,0.479778  -0.725201,1.84508  -0.669388,2.2718"
+             style="stop-color:#d3c5c5;stop-opacity:1"
+             id="stop18120" />
+          <stop
+             path="c -0.835461,-0.490094  -1.37943,-1.29221  -2.54915,-1.42448"
+             style="stop-color:#a08383;stop-opacity:1"
+             id="stop18122" />
+          <stop
+             path="c 7.10543e-15,-0.282441  7.10543e-15,-0.564882  3.8e-05,-0.84732"
+             style="stop-color:#a08383;stop-opacity:1"
+             id="stop18124" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18126">
+          <stop
+             path="c 0.390963,0  0.781927,0  1.17289,0"
+             id="stop18128" />
+          <stop
+             path="c 0.139553,0.49998  -0.892841,2.20818  -0.768376,2.63577"
+             style="stop-color:#c3b0b0;stop-opacity:1"
+             id="stop18130" />
+          <stop
+             path="c -0.426272,-0.0482075  -0.769443,-0.185371  -1.0739,-0.36397"
+             style="stop-color:#c3b1b1;stop-opacity:1"
+             id="stop18132" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18134">
+          <stop
+             path="c 0.256878,0  0.513757,0  0.770635,-1.42109e-14"
+             id="stop18136" />
+          <stop
+             path="c 0.0729301,0.494364  -0.780364,1.94362  -0.719358,2.38077"
+             style="stop-color:#b8a2a2;stop-opacity:1"
+             id="stop18138" />
+          <stop
+             path="c -0.310114,0.124495  -0.59049,0.217157  -0.819653,0.254999"
+             style="stop-color:#aa9090;stop-opacity:1"
+             id="stop18140" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18142">
+          <stop
+             path="c 0.968271,1.42109e-14  1.93654,1.42109e-14  2.9048,1.42109e-14"
+             id="stop18144" />
+          <stop
+             path="c 0,0.282443  0,0.564886  0,0.847329"
+             style="stop-color:#916f6f;stop-opacity:1"
+             id="stop18146" />
+          <stop
+             path="c -0.863782,0.142631  -2.45523,1.06418  -3.62416,1.53344"
+             style="stop-color:#9a7b7b;stop-opacity:1"
+             id="stop18148" />
+        </meshpatch>
+      </meshrow>
+      <meshrow
+         id="meshrow18150">
+        <meshpatch
+           id="meshpatch18152">
+          <stop
+             path="c 0.404156,1.4876  2.44401,2.49738  2.73913,3.27584"
+             id="stop18154" />
+          <stop
+             path="c -1.5046,-0.272967  -3.88648,-1.10593  -5.28825,-1.37638"
+             style="stop-color:#c8b8b8;stop-opacity:1"
+             id="stop18156" />
+          <stop
+             path="c -5.93312e-06,-1.10798  -1.52521e-05,-2.21596  -3e-05,-3.32394"
+             style="stop-color:#d1c2c2;stop-opacity:1"
+             id="stop18158" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18160">
+          <stop
+             path="c 0.488259,1.6773  2.13371,1.94147  2.47317,2.6512"
+             id="stop18162" />
+          <stop
+             path="c -0.510835,-0.0985667  -0.259643,0.360133  -0.807942,0.26067"
+             style="stop-color:#c6b5b5;stop-opacity:1"
+             id="stop18164" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18166">
+          <stop
+             path="c 0.434739,1.51821  1.78404,1.91959  2.10118,2.6731"
+             id="stop18168" />
+          <stop
+             path="c -0.137872,0.0779728  -0.284891,0.155725  -0.447662,0.233099"
+             style="stop-color:#aa9090;stop-opacity:1"
+             id="stop18170" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18172">
+          <stop
+             path="c 0,1.10798  0,2.21597  7.10543e-15,3.32395"
+             id="stop18174" />
+          <stop
+             path="c -0.613554,0.291646  -1.00329,0.588684  -1.52298,0.882592"
+             style="stop-color:#bda9a9;stop-opacity:1"
+             id="stop18176" />
+        </meshpatch>
+      </meshrow>
+      <meshrow
+         id="meshrow18178">
+        <meshpatch
+           id="meshpatch18180">
+          <stop
+             path="c 0.290169,0.959749  -0.35901,1.39501  -0.594672,2.36496"
+             id="stop18182" />
+          <stop
+             path="c -1.41943,0.0676578  -3.33481,0.188377  -4.69357,0.195124"
+             style="stop-color:#a98f8f;stop-opacity:1"
+             id="stop18184" />
+          <stop
+             path="c -7.81092e-07,-1.31213  -3.05891e-06,-2.62425  -8e-06,-3.93646"
+             style="stop-color:#a78b8b;stop-opacity:1"
+             id="stop18186" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18188">
+          <stop
+             path="c 0.401994,0.84048  -0.00752382,1.72649  -0.322965,2.58088"
+             id="stop18190" />
+          <stop
+             path="c -0.49516,0.00247881  -0.562377,0.020088  -1.07965,0.04475"
+             style="stop-color:#cababa;stop-opacity:1"
+             id="stop18192" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18194">
+          <stop
+             path="c 0.312993,0.932286  -0.0153756,1.90056  -0.269393,2.84384"
+             id="stop18196" />
+          <stop
+             path="c -0.160384,-0.0166728  -0.326163,-0.0279291  -0.501235,-0.0298572"
+             style="stop-color:#c0adad;stop-opacity:1"
+             id="stop18198" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18200">
+          <stop
+             path="c 0,1.31212  0,2.62425  0,3.93636"
+             id="stop18202" />
+          <stop
+             path="c -0.659937,-0.00727943  -1.18783,-0.147086  -1.79238,-0.209932"
+             style="stop-color:#e8e1e1;stop-opacity:1"
+             id="stop18204" />
+        </meshpatch>
+      </meshrow>
+      <meshrow
+         id="meshrow18206">
+        <meshpatch
+           id="meshpatch18208">
+          <stop
+             path="c -0.12708,0.516168  -0.677982,1.50469  -1.03203,2.24937"
+             id="stop18210" />
+          <stop
+             path="c -1.07283,7.10543e-14  -2.58869,7.10543e-14  -3.66153,7.10543e-14"
+             style="stop-color:#a98f8f;stop-opacity:1"
+             id="stop18212" />
+          <stop
+             path="c 0,-0.684758  0,-1.36952  -1e-05,-2.05425"
+             style="stop-color:#916f6f;stop-opacity:1"
+             id="stop18214" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18216">
+          <stop
+             path="c -0.164614,0.445956  -0.907506,1.53639  -1.38182,2.29411"
+             id="stop18218" />
+          <stop
+             path="c -0.390963,0  -0.338903,0  -0.729859,1e-05"
+             style="stop-color:#ccbdbd;stop-opacity:1"
+             id="stop18220" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18222">
+          <stop
+             path="c -0.136878,0.502825  -0.730786,1.515  -1.11243,2.26422"
+             id="stop18224" />
+          <stop
+             path="c -0.256876,7.98885e-06  -0.513751,1.80971e-05  -0.770626,3.0887e-05"
+             style="stop-color:#c0adad;stop-opacity:1"
+             id="stop18226" />
+        </meshpatch>
+        <meshpatch
+           id="meshpatch18228">
+          <stop
+             path="c -7.10543e-15,0.684753  -7.10543e-15,1.36951  -7.10543e-15,2.05426"
+             id="stop18230" />
+          <stop
+             path="c -0.968272,0  -1.93654,0  -2.90481,3.0113e-05"
+             style="stop-color:#ffffff;stop-opacity:1"
+             id="stop18232" />
+        </meshpatch>
+      </meshrow>
+    </meshgradient>
+    <meshgradient
+       inkscape:collect="always"
+       id="meshgradient7097"
+       gradientUnits="userSpaceOnUse"
+       x="30.574315"
+       y="91.432907">
+      <meshrow
+         id="meshrow7099">
+        <meshpatch
+           id="meshpatch7101">
+          <stop
+             path="c 0.948358,-0.615151  2.48595,-0.615151  3.43431,0"
+             style="stop-color:#ffffff;stop-opacity:1"
+             id="stop7103" />
+          <stop
+             path="c 0.948358,0.615151  0.948358,1.61251  0,2.22766"
+             style="stop-color:#977878;stop-opacity:1"
+             id="stop7105" />
+          <stop
+             path="c -0.948358,0.615151  -2.48595,0.615151  -3.43431,0"
+             style="stop-color:#ffffff;stop-opacity:1"
+             id="stop7107" />
+          <stop
+             path="c -0.948358,-0.615151  -0.948358,-1.61251  0,-2.22766"
+             style="stop-color:#977878;stop-opacity:1"
+             id="stop7109" />
+        </meshpatch>
+      </meshrow>
+    </meshgradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient23972"
+       id="radialGradient23974"
+       cx="31.09367"
+       cy="95.53302"
+       fx="31.09367"
+       fy="95.53302"
+       r="3.282679"
+       gradientTransform="matrix(1,0,0,0.27052445,0,70.308437)"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient23972"
+       id="radialGradient24350"
+       cx="29.994316"
+       cy="96.382172"
+       fx="29.994316"
+       fy="96.382172"
+       r="6.4330664"
+       gradientTransform="matrix(1,0,0,0.27052445,0,70.308438)"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient25116"
+       id="linearGradient25118"
+       x1="37.975025"
+       y1="87.198807"
+       x2="37.997578"
+       y2="84.042961"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient26456"
+       id="linearGradient26458"
+       x1="30.713118"
+       y1="90.103378"
+       x2="30.510818"
+       y2="81.656837"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient27921"
+       id="radialGradient27923"
+       cx="48.172942"
+       cy="85.860744"
+       fx="48.172942"
+       fy="85.860744"
+       r="3.5529423"
+       gradientTransform="matrix(1,0,0,0.61942174,0,32.676732)"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="Background"
@@ -1726,35 +2094,71 @@
   <g
      inkscape:groupmode="layer"
      id="layer6"
-     inkscape:label="Character Enemy">
-    <g
-       id="g49129"
-       inkscape:export-filename="D:\Creative\Igre\Unity\IGRE\Game Jams\GMTK 2021\assets\enemy_turret.png"
-       inkscape:export-xdpi="198.65001"
-       inkscape:export-ydpi="198.65001">
-      <path
-         id="path47254"
-         style="fill:#6c5353;stroke-width:0.079375;stroke-linecap:round;stroke-linejoin:bevel;paint-order:fill markers stroke"
-         d="m 36.514786,85.666756 a 5.5131783,5.6444445 0 0 1 -5.513179,5.644444 5.5131783,5.6444445 0 0 1 -5.513178,-5.644444 5.5131783,5.6444445 0 0 1 5.513178,-5.644445 5.5131783,5.6444445 0 0 1 5.513179,5.644445 z" />
-      <path
-         style="fill:#aa0000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 37.321527,83.353188 2.855905,2.187169 -2.855905,2.439965 -3.182337,-2.231525 z"
-         id="path46696"
-         sodipodi:nodetypes="ccccc" />
-      <path
-         style="fill:#d35f5f;fill-rule:nonzero;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         d="m 22.276604,83.346276 v 4.909841 L 39.72661,89.65798 37.321526,85.666755 39.355333,81.67553 Z"
-         id="path45760"
-         sodipodi:nodetypes="cccccc" />
-    </g>
+     inkscape:label="Character Enemy"
+     sodipodi:insensitive="true">
     <path
        id="path47496"
-       style="fill:#d40000;stroke:url(#linearGradient47548);stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:bevel;paint-order:fill markers stroke;stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:url(#radialGradient27923);fill-opacity:1;stroke:url(#linearGradient47548);stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;paint-order:fill markers stroke"
        d="m 51.329009,85.857742 c 10e-7,0.97399 -1.595894,1.508702 -3.527129,1.763565 -1.98541,0.262013 -2.761124,-0.692656 -2.784576,-1.833179 -0.02109,-1.025528 0.650231,-1.926908 2.784576,-1.69395 1.936479,0.211361 3.527128,0.789574 3.527129,1.763564 z"
        sodipodi:nodetypes="sssss"
        inkscape:export-filename="D:\Creative\Igre\Unity\IGRE\Game Jams\GMTK 2021\assets\enemy_bullet.png"
        inkscape:export-xdpi="357.4502"
        inkscape:export-ydpi="357.4502" />
+    <g
+       id="g4401"
+       inkscape:export-filename="D:\Creative\Igre\Unity\IGRE\Game Jams\GMTK 2021\assets\enemy_turret_leg.png"
+       inkscape:export-xdpi="357.4502"
+       inkscape:export-ydpi="357.4502"
+       style="display:inline">
+      <ellipse
+         style="fill:url(#radialGradient24350);fill-opacity:1;stroke:#6c5353;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="path2618"
+         cx="29.994316"
+         cy="96.382172"
+         rx="6.3007751"
+         ry="1.6080103" />
+      <ellipse
+         style="fill:url(#radialGradient23974);fill-opacity:1;stroke:#6c5353;stroke-width:0.135012;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="ellipse3794"
+         cx="29.994316"
+         cy="96.382172"
+         rx="3.215173"
+         ry="0.82053894" />
+      <path
+         style="fill:url(#meshgradient7029);fill-opacity:1;stroke:#6c5353;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 28.747286,96.546253 2.165892,-3.203715 -4.653918,-6.521242 c 2.027484,-0.0055 6.253961,4.490806 8.066832,5.99207 l -2.953488,4.12668 c -2.06064,0.127756 -2.896752,-0.03521 -2.625323,-0.393798 z"
+         id="path3073"
+         sodipodi:nodetypes="ccccccc" />
+      <ellipse
+         style="fill:url(#meshgradient7097);fill-opacity:1;stroke:#ac9393;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+         id="path3441"
+         cx="32.29147"
+         cy="92.546738"
+         rx="2.4284236"
+         ry="1.5751938" />
+    </g>
+    <g
+       id="g4406"
+       style="display:inline"
+       inkscape:export-filename="D:\Creative\Igre\Unity\IGRE\Game Jams\GMTK 2021\assets\enemy_turret.png"
+       inkscape:export-xdpi="91.038963"
+       inkscape:export-ydpi="91.038963">
+      <path
+         style="fill:url(#linearGradient25118);fill-opacity:1;stroke:#d45500;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 37.321527,83.353188 2.855905,2.187169 -2.855905,2.439965 -3.182337,-2.231525 z"
+         id="path46696"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:url(#linearGradient26458);fill-opacity:1;fill-rule:nonzero;stroke:#550000;stroke-width:0.79375;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 22.40787,81.902348 -0.131266,6.353769 17.450006,1.401863 -2.405084,-3.991225 2.033807,-3.764407 z"
+         id="path45760"
+         sodipodi:nodetypes="cccccc" />
+      <path
+         style="fill:none;stroke:#772121;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.517915"
+         d="M 36.894911,85.699572 22.703225,85.210188"
+         id="path1276"
+         sodipodi:nodetypes="cc" />
+    </g>
   </g>
   <script
      id="mesh_polyfill"
