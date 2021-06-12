@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1595,6 +1595,8 @@ MonoBehaviour:
   player: {fileID: 1774619965}
   ball: {fileID: 1402185942}
   cable_length: 5
+  enemy_types:
+  - {fileID: 3791723786240643677, guid: 302f9b266abab6b45bfb41425422d1bb, type: 3}
   isPaused: 0
   score: 0
 --- !u!4 &2143956241
@@ -1687,9 +1689,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7742579345908829297, guid: 302f9b266abab6b45bfb41425422d1bb, type: 3}
+      propertyPath: worth
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 3791723786240643677, guid: 302f9b266abab6b45bfb41425422d1bb, type: 3}
       propertyPath: m_Name
       value: Enemy_Bob
+      objectReference: {fileID: 0}
+    - target: {fileID: 4966440529649089538, guid: 302f9b266abab6b45bfb41425422d1bb, type: 3}
+      propertyPath: m_LinearDrag
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 7430961149438106229, guid: 302f9b266abab6b45bfb41425422d1bb, type: 3}
       propertyPath: m_RootOrder
@@ -1754,11 +1764,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7301787668821970405, guid: ebe805b801a83224da697129ef68d656, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.95
+      value: -2.67
       objectReference: {fileID: 0}
     - target: {fileID: 7301787668821970405, guid: ebe805b801a83224da697129ef68d656, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 7301787668821970405, guid: ebe805b801a83224da697129ef68d656, type: 3}
       propertyPath: m_LocalPosition.z

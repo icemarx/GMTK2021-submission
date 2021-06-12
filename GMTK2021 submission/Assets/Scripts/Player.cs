@@ -78,4 +78,12 @@ public class Player : PC {
             // TODO
         }
     }
+
+    public override void Hit(float damage) {
+        hp = Mathf.Max(0, hp - damage);
+
+        if(hp <= 0) {
+            GM.Lose();
+        }
+    }
 }
