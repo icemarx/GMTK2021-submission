@@ -50,7 +50,7 @@ public class StartOptions : MonoBehaviour {
 		}
 
 		//If changeScenes is true, start fading and change scenes halfway through animation when screen is blocked by FadeImage
-		if (menuSettingsData.nextSceneIndex != 0) 
+		if (changeScenes && menuSettingsData.nextSceneIndex != 0) 
 		{
 			//Use invoke to delay calling of LoadDelayed by half the length of fadeColorAnimationClip
 			Invoke ("LoadDelayed", menuSettingsData.menuFadeTime);
@@ -99,6 +99,7 @@ public class StartOptions : MonoBehaviour {
 
 		//Load the selected scene, by scene index number in build settings
 		SceneManager.LoadScene (sceneToStart);
+		StartCoroutine(FadeCanvasGroupAlpha(1f, 0f, fadeOutImageCanvasGroup));
 	}
 
 	public void HideDelayed()
