@@ -136,9 +136,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddba8feffd8924640baae3a883a549e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 3
   on_hit_speed_loss: 0.15
-  throw_speed: 3
+  throw_speed: 10
   isConnected: 1
   ballSprites:
   - {fileID: 21300000, guid: fa9188b63f25a6e44bc27c213cd6b386, type: 3}

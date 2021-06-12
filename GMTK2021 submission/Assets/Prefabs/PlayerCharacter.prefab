@@ -136,8 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57b38b98885cf5a44aa8863f2af1b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walk_speed: 1
-  dash_speed: 2
+  walk_speed: 5
+  dash_speed: 10
   max_stamina: 100
   stamina: 100
   toss_cost: 20

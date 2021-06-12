@@ -55,7 +55,9 @@ public class Ball : PC {
         // Debug.Log(speed);
         speed -= on_hit_speed_loss * throw_speed;
         speed = Mathf.Max(speed, 0);
-        bounceSFX.Play();
+
+        if (!isConnected)
+            bounceSFX.Play();
         // Vector2 new_dir = Vector2.Reflect(rb.velocity, collision.GetContact(0).normal).normalized * speed;
         // rb.velocity = new_dir;
 
