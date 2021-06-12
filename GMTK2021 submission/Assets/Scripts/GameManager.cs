@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     }
 
     public void Lose() {
-
+        Debug.Log("You have dishonored your family!");
     }
 
     public void UpdateScore(int difference) {

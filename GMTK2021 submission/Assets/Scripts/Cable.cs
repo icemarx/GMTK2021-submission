@@ -102,4 +102,8 @@ public class Cable : PC
             this.posOld = pos;
         }
     }
+
+    public override void Hit(float damage) {
+        throw new System.NotImplementedException();
+    }
 }

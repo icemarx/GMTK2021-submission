@@ -81,4 +81,8 @@ public class Ball : PC {
             // TODO
         }
     }
+
+    public override void Hit(float damage) {
+        Debug.Log("Took it like a champ");
+    }
 }

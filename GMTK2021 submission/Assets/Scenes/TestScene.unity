@@ -1697,6 +1697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Bob
       objectReference: {fileID: 0}
+    - target: {fileID: 4966440529649089538, guid: 302f9b266abab6b45bfb41425422d1bb, type: 3}
+      propertyPath: m_LinearDrag
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 7430961149438106229, guid: 302f9b266abab6b45bfb41425422d1bb, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1760,11 +1764,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7301787668821970405, guid: ebe805b801a83224da697129ef68d656, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.95
+      value: -2.67
       objectReference: {fileID: 0}
     - target: {fileID: 7301787668821970405, guid: ebe805b801a83224da697129ef68d656, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.3
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 7301787668821970405, guid: ebe805b801a83224da697129ef68d656, type: 3}
       propertyPath: m_LocalPosition.z
