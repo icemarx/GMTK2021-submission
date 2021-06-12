@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public bool isPaused = false;
-
+    // objects data
     public Player player;
     public Ball ball;
     public float cable_length = 5;
 
-    int score = 0;
+    // UI data
+    public bool isPaused = false;
+    public int score = 0;
 
 
     public static void SpawnEnemy() {
