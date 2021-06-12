@@ -28,14 +28,14 @@
      inkscape:document-units="px"
      showgrid="false"
      inkscape:zoom="0.71263105"
-     inkscape:cx="500.25886"
+     inkscape:cx="493.94423"
      inkscape:cy="351.51429"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1272"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer3"
      inkscape:snap-global="false"
      inkscape:snap-bbox="true"
      inkscape:object-paths="true"
@@ -1311,11 +1311,11 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Company Logo"
-     sodipodi:insensitive="true"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <g
        id="g10794"
-       transform="translate(0,-1.6068948)"
+       transform="translate(3.6754424,-1.6068948)"
        style="opacity:0.68;fill:none;stroke:#625c58;stroke-opacity:1">
       <path
          id="path2573"
@@ -1514,7 +1514,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Character"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <path
        id="path43937"
@@ -1594,7 +1594,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Character Ball"
-     style="display:inline"
+     style="display:none"
      sodipodi:insensitive="true">
     <path
        id="path44799"
