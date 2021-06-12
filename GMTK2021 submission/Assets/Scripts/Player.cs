@@ -34,6 +34,10 @@ public class Player : PC {
     private SpriteRenderer spriteRenderer;
     public Sprite[] playerSprites;
 
+
+    // Audio reference
+    public AudioSource dashSFX;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -99,9 +103,10 @@ public class Player : PC {
     private void Dash() {
         if (stamina >= dash_cost) {
             UpdateStamina(-dash_cost);
-            
+
             isDashing = true;
             dash_timer = dash_timer_max;
+            dashSFX.Play();
         }
     }
 

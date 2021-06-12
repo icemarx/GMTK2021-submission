@@ -5286,9 +5286,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.85
-  m_Text: 'GAME
-
-    TITLE'
+  m_Text: CHARGEBALL
 --- !u!114 &1723326284765732790
 MonoBehaviour:
   m_ObjectHideFlags: 0

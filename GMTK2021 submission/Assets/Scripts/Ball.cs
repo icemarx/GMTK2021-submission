@@ -20,6 +20,9 @@ public class Ball : PC {
     private SpriteRenderer spriteRenderer;
     public Sprite[] ballSprites;
 
+    // audio references
+    public AudioSource bounceSFX;
+
     private void Start() {
         GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
@@ -53,6 +56,8 @@ public class Ball : PC {
         speed -= on_hit_speed_loss * throw_speed;
         speed = Mathf.Max(speed, 0);
 
+        if (!isConnected)
+            bounceSFX.Play();
         // Vector2 new_dir = Vector2.Reflect(rb.velocity, collision.GetContact(0).normal).normalized * speed;
         // rb.velocity = new_dir;
 
