@@ -39,11 +39,12 @@ public class Ball : PC {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        speed -= on_hit_speed_loss;
+        Debug.Log(speed);
+        speed -= on_hit_speed_loss * throw_speed;
         speed = Mathf.Max(speed, 0);
 
-        Vector2 new_dir = Vector2.Reflect(rb.velocity, collision.GetContact(0).normal).normalized * speed;
-        rb.velocity = new_dir;
+        // Vector2 new_dir = Vector2.Reflect(rb.velocity, collision.GetContact(0).normal).normalized * speed;
+        // rb.velocity = new_dir;
 
         if(collision.gameObject.CompareTag("Player")) {
             // connect
