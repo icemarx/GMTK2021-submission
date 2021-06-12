@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     public Ball ball;
     public float cable_length = 5;
     public GameObject[] enemy_types;
+    [SerializeField]
+    private float mean_spawn_time = 3;
+    private float spawn_time_diviation = 1.5f;
 
     // map data
     private static readonly float MAX_X = 6;
@@ -24,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     private void Start() {
         UpdateScore(-score);
+        StartCoroutine("AutoSpawnEnemy");
     }
 
     private void Update() {
@@ -34,6 +38,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    IEnumerator AutoSpawnEnemy() {
+        while (true) {
+            float t = mean_spawn_time + Random.Range(-spawn_time_diviation, spawn_time_diviation);
+            yield return new WaitForSeconds(t);
+
+            SpawnEnemy();
+        }
+    }
 
     public void SpawnEnemy() {
         Instantiate(enemy_types[0], GetRandomPointInView(), Quaternion.identity);
