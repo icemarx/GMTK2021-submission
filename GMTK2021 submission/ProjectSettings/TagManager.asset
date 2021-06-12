@@ -9,6 +9,7 @@ TagManager:
   - Ball
   - Bullet
   - Cable
+  - GameManager
   layers:
   - Default
   - TransparentFX

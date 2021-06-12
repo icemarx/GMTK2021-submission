@@ -1217,7 +1217,7 @@ GameObject:
   - component: {fileID: 2143956240}
   m_Layer: 0
   m_Name: GameManagerObject
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1234,6 +1234,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6590a58775b12b45b8648fc979e6d7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPaused: 0
+  player: {fileID: 1774619965}
+  ball: {fileID: 1402185942}
+  cable_length: 5
 --- !u!4 &2143956241
 Transform:
   m_ObjectHideFlags: 0
@@ -1302,6 +1306,14 @@ PrefabInstance:
     - target: {fileID: 5536026356745681220, guid: 21dadf7f561f5ca45b4ffd1bce61f891, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996045718807980323, guid: 21dadf7f561f5ca45b4ffd1bce61f891, type: 3}
+      propertyPath: m_LinearDrag
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996045718807980323, guid: 21dadf7f561f5ca45b4ffd1bce61f891, type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21dadf7f561f5ca45b4ffd1bce61f891, type: 3}
