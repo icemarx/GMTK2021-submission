@@ -27,21 +27,63 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="0.71263105"
-     inkscape:cx="493.94423"
-     inkscape:cy="351.51429"
+     inkscape:zoom="1.0078125"
+     inkscape:cx="531.84496"
+     inkscape:cy="419.22481"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="1272"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer6"
      inkscape:snap-global="false"
      inkscape:snap-bbox="true"
      inkscape:object-paths="true"
      inkscape:snap-smooth-nodes="true" />
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient47546">
+      <stop
+         style="stop-color:#ff0000;stop-opacity:0"
+         offset="0"
+         id="stop47542" />
+      <stop
+         style="stop-color:#ff6600;stop-opacity:1"
+         offset="1"
+         id="stop47544" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect46122"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="0,0.33449"
+       not_jump="false"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect45762"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="0,0.33449"
+       not_jump="false"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="zerowidth" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient41960">
@@ -1264,6 +1306,15 @@
        y1="86.807137"
        x2="100.00903"
        y2="85.625748" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient47546"
+       id="linearGradient47548"
+       x1="47.75547"
+       y1="85.811333"
+       x2="51.329009"
+       y2="85.857742"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <g
      inkscape:label="Background"
@@ -1514,7 +1565,7 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="Character"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <path
        id="path43937"
@@ -1594,7 +1645,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="Character Ball"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <path
        id="path44799"
@@ -1671,6 +1722,39 @@
        inkscape:export-filename="D:\Creative\Igre\Unity\IGRE\Game Jams\GMTK 2021\assets\robob_spikes_back.png"
        inkscape:export-xdpi="295.79764"
        inkscape:export-ydpi="295.79764" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Character Enemy">
+    <g
+       id="g49129"
+       inkscape:export-filename="D:\Creative\Igre\Unity\IGRE\Game Jams\GMTK 2021\assets\enemy_turret.png"
+       inkscape:export-xdpi="198.65001"
+       inkscape:export-ydpi="198.65001">
+      <path
+         id="path47254"
+         style="fill:#6c5353;stroke-width:0.079375;stroke-linecap:round;stroke-linejoin:bevel;paint-order:fill markers stroke"
+         d="m 36.514786,85.666756 a 5.5131783,5.6444445 0 0 1 -5.513179,5.644444 5.5131783,5.6444445 0 0 1 -5.513178,-5.644444 5.5131783,5.6444445 0 0 1 5.513178,-5.644445 5.5131783,5.6444445 0 0 1 5.513179,5.644445 z" />
+      <path
+         style="fill:#aa0000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 37.321527,83.353188 2.855905,2.187169 -2.855905,2.439965 -3.182337,-2.231525 z"
+         id="path46696"
+         sodipodi:nodetypes="ccccc" />
+      <path
+         style="fill:#d35f5f;fill-rule:nonzero;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 22.276604,83.346276 v 4.909841 L 39.72661,89.65798 37.321526,85.666755 39.355333,81.67553 Z"
+         id="path45760"
+         sodipodi:nodetypes="cccccc" />
+    </g>
+    <path
+       id="path47496"
+       style="fill:#d40000;stroke:url(#linearGradient47548);stroke-width:0.79375;stroke-linecap:round;stroke-linejoin:bevel;paint-order:fill markers stroke;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 51.329009,85.857742 c 10e-7,0.97399 -1.595894,1.508702 -3.527129,1.763565 -1.98541,0.262013 -2.761124,-0.692656 -2.784576,-1.833179 -0.02109,-1.025528 0.650231,-1.926908 2.784576,-1.69395 1.936479,0.211361 3.527128,0.789574 3.527129,1.763564 z"
+       sodipodi:nodetypes="sssss"
+       inkscape:export-filename="D:\Creative\Igre\Unity\IGRE\Game Jams\GMTK 2021\assets\enemy_bullet.png"
+       inkscape:export-xdpi="357.4502"
+       inkscape:export-ydpi="357.4502" />
   </g>
   <script
      id="mesh_polyfill"
