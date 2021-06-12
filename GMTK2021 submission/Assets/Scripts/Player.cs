@@ -21,6 +21,9 @@ public class Player : PC {
     public float gain_stamina = 0.1f;
     public bool can_regain_stamina = true;
 
+    // sprite references
+    private SpriteRenderer spriteRenderer;
+    public Sprite[] playerSprites;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +31,7 @@ public class Player : PC {
         GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         ball = GM.ball;
     }
 
@@ -41,6 +45,11 @@ public class Player : PC {
                 Dash();
             }
         }
+
+        spriteRenderer.flipX = rb.velocity.x > 0f;
+        int spriteIndex = rb.velocity.y > 0f ? 1 : 0;
+        spriteRenderer.sprite = playerSprites[spriteIndex];
+
     }
 
     void FixedUpdate()

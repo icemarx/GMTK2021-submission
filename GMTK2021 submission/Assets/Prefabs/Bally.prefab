@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1853201094583621993}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.76, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1608155710281747934}
@@ -139,6 +139,11 @@ MonoBehaviour:
   on_hit_speed_loss: 0.15
   throw_speed: 3
   isConnected: 1
+  ballSprites:
+  - {fileID: 21300000, guid: fa9188b63f25a6e44bc27c213cd6b386, type: 3}
+  - {fileID: 21300000, guid: d7a8e4e86a4bbb3458b11806fb7fc0ad, type: 3}
+  - {fileID: 21300000, guid: bf7420306295c6548a3e48f17c57c983, type: 3}
+  - {fileID: 21300000, guid: d77374ef62d6c284590e6d490efd80b2, type: 3}
 --- !u!1 &5279073173489630120
 GameObject:
   m_ObjectHideFlags: 0

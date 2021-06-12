@@ -16,10 +16,15 @@ public class Ball : PC {
     private Rigidbody2D rb;
     public bool isConnected = true;
 
+    // sprite references
+    private SpriteRenderer spriteRenderer;
+    public Sprite[] ballSprites;
+
     private void Start() {
         GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
 
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void Update() {
@@ -36,6 +41,11 @@ public class Ball : PC {
             Vector2 dir = (GM.player.transform.position - transform.position).normalized;
             rb.velocity = dir * GM.player.walk_speed;
         }
+
+        spriteRenderer.flipX = rb.velocity.x > 0f;
+        int spriteIndex = rb.velocity.y > 0f ? 1 : 0;
+        spriteIndex += isConnected ? 0 : 2;
+        spriteRenderer.sprite = ballSprites[spriteIndex];
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
