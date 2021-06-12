@@ -9,6 +9,10 @@ public class Player : PC {
     // physics
     public float walk_speed = 1;
     public float dash_speed = 2;
+    private bool isDashing = false;
+    [SerializeField]
+    private float dash_timer_max = 1;
+    private float dash_timer = 0;
     private Rigidbody2D rb;
 
     // ball
@@ -61,6 +65,13 @@ public class Player : PC {
         int spriteIndex = rb.velocity.y > 0f ? 1 : 0;
         spriteRenderer.sprite = playerSprites[spriteIndex];
 
+        if(isDashing) {
+            dash_timer -= Time.deltaTime;
+            if(dash_timer <= 0) {
+                StopDashing();
+            }
+        }
+
     }
 
     void FixedUpdate()
@@ -72,11 +83,14 @@ public class Player : PC {
         Vector2 movement_dir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         movement_dir = movement_dir.normalized;
 
-        rb.velocity = movement_dir * walk_speed;
+        if (isDashing)
+            rb.velocity = movement_dir * dash_speed;
+        else
+            rb.velocity = movement_dir * walk_speed;
     }
 
     public void UpdateStamina(float difference) {
-        stamina = Mathf.Clamp(stamina+difference, 0 , max_stamina);
+        stamina = Mathf.Clamp(stamina+difference, 0, max_stamina);
 
         // update UI
         stamina_slider.value = stamina;
@@ -84,11 +98,16 @@ public class Player : PC {
 
     private void Dash() {
         if (stamina >= dash_cost) {
-            Debug.Log("DASH");
             UpdateStamina(-dash_cost);
-
-            // TODO
+            
+            isDashing = true;
+            dash_timer = dash_timer_max;
         }
+    }
+
+    private void StopDashing() {
+        dash_timer = 0;
+        isDashing = false;
     }
 
     public override void Hit(float damage) {
