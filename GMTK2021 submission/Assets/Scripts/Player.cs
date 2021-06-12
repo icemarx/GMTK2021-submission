@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : PC {
     private GameManager GM;
@@ -21,6 +22,10 @@ public class Player : PC {
     public float gain_stamina = 0.1f;
     public bool can_regain_stamina = true;
 
+    // UI
+    public Slider hp_slider;
+    public Slider stamina_slider;
+
     // sprite references
     private SpriteRenderer spriteRenderer;
     public Sprite[] playerSprites;
@@ -33,6 +38,12 @@ public class Player : PC {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         ball = GM.ball;
+
+        // set up the ui
+        hp_slider.maxValue = max_hp;
+        hp_slider.value = hp;
+        stamina_slider.maxValue = max_stamina;
+        stamina_slider.value = stamina;
     }
 
     private void Update() {
@@ -68,6 +79,7 @@ public class Player : PC {
         stamina = Mathf.Clamp(stamina+difference, 0 , max_stamina);
 
         // update UI
+        stamina_slider.value = stamina;
     }
 
     private void Dash() {
@@ -82,7 +94,10 @@ public class Player : PC {
     public override void Hit(float damage) {
         hp = Mathf.Max(0, hp - damage);
 
-        if(hp <= 0) {
+        // update UI
+        hp_slider.value = hp;
+
+        if (hp <= 0) {
             GM.Lose();
         }
     }

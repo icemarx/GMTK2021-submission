@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
     // UI data
     public bool isPaused = false;
     public int score = 0;
+    public TextMeshProUGUI score_text;
 
     private void Start() {
         UpdateScore(-score);
@@ -51,8 +53,8 @@ public class GameManager : MonoBehaviour
 
     public void UpdateScore(int difference) {
         score += difference;
-        Debug.Log(score);
+        // Debug.Log(score);
 
-        // TODO
+        score_text.SetText("Score: " + score);
     }
 }
