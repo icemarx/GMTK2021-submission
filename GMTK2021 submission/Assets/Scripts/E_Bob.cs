@@ -19,4 +19,8 @@ public class E_Bob : Enemy {
     protected override void Shoot() {
         throw new System.NotImplementedException();
     }
+
+    private void OnDestroy() {
+        GM.UpdateScore(worth);
+    }
 }

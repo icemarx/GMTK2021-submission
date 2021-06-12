@@ -39,7 +39,7 @@ public class Ball : PC {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        Debug.Log(speed);
+        // Debug.Log(speed);
         speed -= on_hit_speed_loss * throw_speed;
         speed = Mathf.Max(speed, 0);
 
@@ -49,6 +49,8 @@ public class Ball : PC {
         if(collision.gameObject.CompareTag("Player")) {
             // connect
             PickUp();
+        } else if(collision.gameObject.CompareTag("Enemy")) {
+            Destroy(collision.gameObject);
         }
     }
 

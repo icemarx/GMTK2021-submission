@@ -1595,6 +1595,8 @@ MonoBehaviour:
   player: {fileID: 1774619965}
   ball: {fileID: 1402185942}
   cable_length: 5
+  enemy_types:
+  - {fileID: 3791723786240643677, guid: 302f9b266abab6b45bfb41425422d1bb, type: 3}
   isPaused: 0
   score: 0
 --- !u!4 &2143956241
