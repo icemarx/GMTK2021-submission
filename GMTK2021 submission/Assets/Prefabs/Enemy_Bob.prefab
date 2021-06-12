@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7430961149438106229}
   - component: {fileID: 2370069723525731488}
   - component: {fileID: 6697176268923281548}
+  - component: {fileID: 4966440529649089538}
   - component: {fileID: -7742579345908829297}
   m_Layer: 0
   m_Name: Enemy_Bob
@@ -100,6 +101,27 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 2}
   m_Direction: 0
+--- !u!50 &4966440529649089538
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3791723786240643677}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!114 &-7742579345908829297
 MonoBehaviour:
   m_ObjectHideFlags: 0
