@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : PC {
     // physics
-    public float SPEED = 1;
+    public float walk_speed = 1;
+    public float dash_speed = 2;
     private Rigidbody2D rb;
 
 
@@ -23,6 +24,14 @@ public class Player : PC {
         Vector2 movement_dir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         movement_dir = movement_dir.normalized;
 
-        rb.velocity = movement_dir * SPEED;
+        rb.velocity = movement_dir * walk_speed;
+    }
+
+    public void Throw() {
+        // TODO
+    }
+
+    public void PickUp() {
+        // TODO
     }
 }
