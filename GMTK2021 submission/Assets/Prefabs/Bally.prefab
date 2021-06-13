@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6996045718807980323}
   - component: {fileID: 5262362877387188970}
   - component: {fileID: -1401772886858478744}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bally
   m_TagString: Ball
   m_Icon: {fileID: 0}
@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddba8feffd8924640baae3a883a549e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  max_hp: 10
   speed: 3
   on_hit_speed_loss: 0.15
   throw_speed: 10
@@ -252,7 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1608155710281747934}
   - component: {fileID: 5730457484493825819}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Circle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
