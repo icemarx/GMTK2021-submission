@@ -137,9 +137,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   max_hp: 10
+  hurt_material: {fileID: 2100000, guid: 93dd7a353ac49e147837908167655c85, type: 2}
   walk_speed: 5
   dash_speed: 10
   dash_timer_max: 1
+  dash_force: 2
+  cable_all: {fileID: 0}
+  cable_hp_max: 10
+  cable_hp: 0
   max_stamina: 100
   stamina: 100
   toss_cost: 20
