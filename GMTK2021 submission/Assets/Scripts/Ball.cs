@@ -52,7 +52,7 @@ public class Ball : PC {
 
         spriteRenderer.flipX = rb.velocity.x > 0.1f;
         int spriteIndex = rb.velocity.y > 0.1f ? 1 : 0;
-        spriteIndex += isConnected ? 0 : 2;
+        spriteIndex += isAttackMode ? 2 : 0;
         spriteRenderer.sprite = ballSprites[spriteIndex];
     }
 
