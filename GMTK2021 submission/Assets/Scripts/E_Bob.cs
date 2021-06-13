@@ -28,9 +28,11 @@ public class E_Bob : Enemy {
     private void Update() {
         turret.transform.rotation = Quaternion.LookRotation(Vector3.forward, player.position - transform.position) * Quaternion.Euler(0,0,90);
 
+        /*
         if (Input.GetKeyDown(KeyCode.I)) {
             Shoot();
         }
+        */
     }
 
     IEnumerator AutoShoot() {

@@ -34,9 +34,11 @@ public class GameManager : MonoBehaviour
 
     private void Update() {
         if (!isPaused) {
+            /*
             if (Input.GetKeyDown(KeyCode.O)) {
                 SpawnEnemy();
             }
+            */
         }
     }
 

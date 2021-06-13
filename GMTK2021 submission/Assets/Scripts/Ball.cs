@@ -35,9 +35,11 @@ public class Ball : PC {
         if (Input.GetMouseButtonDown(0)) {
             Throw();
         }
+        /*
         if (Input.GetKeyDown(KeyCode.E)) {
             PickUp();
         }
+        */
         
         if (!isConnected)
             rb.velocity = rb.velocity.normalized * speed;

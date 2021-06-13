@@ -68,7 +68,7 @@ public class Player : PC {
                 UpdateStamina(gain_stamina);
             }
 
-            if (Input.GetKeyDown(KeyCode.Q)) {
+            if (Input.GetMouseButtonDown(1)) {
                 Dash();
             }
         }
