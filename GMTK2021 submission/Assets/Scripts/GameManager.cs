@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     private int max_enemy_num = 10;
     [SerializeField]
     private float min_spawn_distance = 2;
+    public GameObject prespawn_go;
 
     // map data
     private static readonly float MAX_X = 6;
@@ -62,7 +63,9 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(t);
 
             // count turrets
-            if(GameObject.FindGameObjectsWithTag("Enemy").Length < max_enemy_num) SpawnEnemy();
+            if (GameObject.FindGameObjectsWithTag("Enemy").Length < max_enemy_num) {
+                StartCoroutine("Prespawn");
+            }
         }
     }
 
@@ -71,6 +74,18 @@ public class GameManager : MonoBehaviour
         while(Vector3.Distance(point, player.transform.position) < min_spawn_distance) {
             point = GetRandomPointInView();
         }
+
+        Instantiate(enemy_types[0], point, Quaternion.identity);
+    }
+
+    IEnumerator Prespawn() {
+        Vector3 point = GetRandomPointInView();
+        while (Vector3.Distance(point, player.transform.position) < min_spawn_distance) {
+            point = GetRandomPointInView();
+        }
+        Instantiate(prespawn_go, point, Quaternion.identity);
+
+        yield return new WaitForSeconds(0.5f);
 
         Instantiate(enemy_types[0], point, Quaternion.identity);
     }

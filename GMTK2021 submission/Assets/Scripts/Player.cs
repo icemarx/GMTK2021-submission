@@ -33,7 +33,7 @@ public class Player : PC {
     public float stamina = 100;
     public float toss_cost = 20;
     public float dash_cost = 10;
-    public float gain_stamina = 0.1f;
+    public float gain_stamina = 0.25f;
     public bool can_regain_stamina = true;
 
     // UI
@@ -70,10 +70,6 @@ public class Player : PC {
 
     private void Update() {
         if (!GM.isPaused) {
-            if (can_regain_stamina) {
-                UpdateStamina(gain_stamina);
-            }
-
             if (Input.GetMouseButtonDown(1)) {
                 Dash();
             }
@@ -92,10 +88,14 @@ public class Player : PC {
 
     }
 
-    void FixedUpdate()
-    {
-        if (!GM.isPaused)
+    void FixedUpdate() {
+        if (!GM.isPaused) {
             Movement();
+
+            if (can_regain_stamina) {
+                UpdateStamina(gain_stamina);
+            }
+        }
     }
 
     private void Movement() {

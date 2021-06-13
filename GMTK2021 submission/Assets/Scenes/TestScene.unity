@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2885,6 +2885,7 @@ MonoBehaviour:
   mean_spawn_time: 3
   max_enemy_num: 10
   min_spawn_distance: 2
+  prespawn_go: {fileID: 730616528428436183, guid: 65c54f79f6eade44d85ec4d415b61b92, type: 3}
   isPaused: 0
   score: 0
   score_text: {fileID: 62717575}
