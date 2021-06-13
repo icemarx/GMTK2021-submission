@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -31,6 +33,9 @@ public class GameManager : MonoBehaviour
 
     // Menu reference
     private Pause pauseScript;
+
+    public GameObject gameOverScreen;
+    public Text gameOverScoreText;
 
     private void Start() {
         UpdateScore(-score);
@@ -74,12 +79,15 @@ public class GameManager : MonoBehaviour
         return new Vector2(Random.Range(MIN_X, MAX_X), Random.Range(MIN_Y, MAX_Y));
     }
 
-    public void Win() {
-
-    }
-
     public void Lose() {
-        Debug.Log("You have dishonored your family!");
+        if (pauseScript != null)
+            pauseScript.DoPause();
+        else {
+            Time.timeScale = 0f;
+            this.isPaused = true;
+        }
+        gameOverScreen.SetActive(true);
+        gameOverScoreText.text = "Your score is: " + score.ToString();
     }
 
     public void UpdateScore(int difference) {
@@ -88,4 +96,25 @@ public class GameManager : MonoBehaviour
 
         score_text.SetText("Score: " + score);
     }
+
+    public void LoadMenu() {
+        if (pauseScript != null)
+            pauseScript.UnPause();
+        else {
+            Time.timeScale = 0f;
+            this.isPaused = true;
+        }
+        SceneManager.LoadScene(0);
+    }
+
+    public void Restart() {
+        if (pauseScript != null)
+            pauseScript.UnPause();
+        else {
+            Time.timeScale = 0f;
+            this.isPaused = true;
+        }
+        SceneManager.LoadScene(1);
+    }
+
 }

@@ -270,15 +270,14 @@ GameObject:
   - component: {fileID: 123995598}
   - component: {fileID: 123995597}
   - component: {fileID: 123995596}
-  - component: {fileID: 123995595}
   - component: {fileID: 123995594}
   m_Layer: 5
-  m_Name: PausePanel
+  m_Name: GameoverPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &123995593
 RectTransform:
   m_ObjectHideFlags: 0
@@ -315,19 +314,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flexibleUIData: {fileID: 11400000, guid: 448a8bcccb6c4a9499413d47af705f17, type: 2}
---- !u!114 &123995595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 123995592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c9e36e31de9ee84d9ca18b620a85c41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  firstSelectedObject: {fileID: 0}
 --- !u!225 &123995596
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -563,26 +549,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShowPanels, Assembly-CSharp
-        m_MethodName: HidePausePanel
+      - m_Target: {fileID: 2143956240}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: UnPause
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2429,26 +2403,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ShowPanels, Assembly-CSharp
-        m_MethodName: HidePausePanel
+      - m_Target: {fileID: 2143956240}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: UnPause
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2926,6 +2888,8 @@ MonoBehaviour:
   isPaused: 0
   score: 0
   score_text: {fileID: 62717575}
+  gameOverScreen: {fileID: 123995592}
+  gameOverScoreText: {fileID: 1426023544}
 --- !u!4 &2143956241
 Transform:
   m_ObjectHideFlags: 0
@@ -2994,6 +2958,34 @@ PrefabInstance:
     - target: {fileID: 1086420275571797724, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
       propertyPath: m_Name
       value: Cable
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086420276258755396, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.064
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086420276258755396, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.334
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086420276258755399, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086420276258755399, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: m_Anchor.y
+      value: -1.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086420276258755399, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086420276258755399, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 1086420276258755448, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: m_Anchor.y
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 1086420276258755448, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
       propertyPath: m_ConnectedAnchor.x

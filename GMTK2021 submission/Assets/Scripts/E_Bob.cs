@@ -50,9 +50,11 @@ public class E_Bob : Enemy {
     }
 
     private void OnDestroy() {
-        
-        Instantiate(deathFX, this.transform.position, Quaternion.identity);
 
         GM.UpdateScore(worth);
+    }
+
+    public void SpawnDeathFX() {
+        Instantiate(deathFX, this.transform.position, Quaternion.identity);
     }
 }

@@ -70,6 +70,10 @@ public class Ball : PC {
             // connect
             PickUp();
         } else if(isAttackMode && collision.gameObject.CompareTag("Enemy")) {
+            E_Bob turretScript = collision.gameObject.GetComponent<E_Bob>();
+            if (turretScript != null) {
+                turretScript.SpawnDeathFX();
+            }
             Destroy(collision.gameObject);
         }
     }
