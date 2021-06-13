@@ -154,8 +154,8 @@ MonoBehaviour:
   cable_hp: 0
   max_stamina: 100
   stamina: 100
-  toss_cost: 20
-  dash_cost: 10
+  toss_cost: 60
+  dash_cost: 20
   gain_stamina: 0.1
   can_regain_stamina: 1
   hp_slider: {fileID: 0}

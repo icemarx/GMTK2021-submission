@@ -133,7 +133,7 @@ public class Player : PC {
 
             // affect sprite
             Color sprite_c = GetComponent<SpriteRenderer>().color;
-            sprite_c = new Color(sprite_c.r, sprite_c.g, sprite_c.b, sprite_c.a / 2);
+            sprite_c = new Color(sprite_c.r, sprite_c.g, sprite_c.b, .5f);
             GetComponent<SpriteRenderer>().color = sprite_c;
 
             // change collisions
@@ -147,7 +147,7 @@ public class Player : PC {
 
         // affect sprite
         Color sprite_c = GetComponent<SpriteRenderer>().color;
-        sprite_c = new Color(sprite_c.r, sprite_c.g, sprite_c.b, sprite_c.a * 2);
+        sprite_c = new Color(sprite_c.r, sprite_c.g, sprite_c.b, 1);
         GetComponent<SpriteRenderer>().color = sprite_c;
 
         // change collisions
