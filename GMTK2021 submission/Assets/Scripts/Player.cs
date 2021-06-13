@@ -13,6 +13,8 @@ public class Player : PC {
     [SerializeField]
     private float dash_timer_max = 1;
     private float dash_timer = 0;
+    [SerializeField]
+    private float dash_force = 2;
     private Rigidbody2D rb;
 
     // ball
@@ -93,10 +95,11 @@ public class Player : PC {
         Vector2 movement_dir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
         movement_dir = movement_dir.normalized;
 
-        if (isDashing)
-            rb.velocity = movement_dir * dash_speed;
-        else
+        if (!isDashing)
             rb.velocity = movement_dir * walk_speed;
+        // else
+        //     rb.velocity = movement_dir * dash_speed;
+            
     }
 
     public void UpdateStamina(float difference) {
@@ -113,6 +116,13 @@ public class Player : PC {
             isDashing = true;
             dash_timer = dash_timer_max;
             dashSFX.Play();
+            
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector3 dir = (mousePos - transform.position).normalized;
+
+            rb.velocity = Vector2.zero;
+            rb.AddForce(dir * dash_force);
+            // TODO: change collisions
         }
     }
 
@@ -134,7 +144,7 @@ public class Player : PC {
 
     public void CableHit(float damage) {
         cable_hp = Mathf.Max(0, cable_hp - damage);
-        Debug.Log(cable_hp);
+        // Debug.Log(cable_hp);
 
         // update UI?
 

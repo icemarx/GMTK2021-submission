@@ -100,6 +100,6 @@ public class Ball : PC {
     }
 
     public override void Hit(float damage) {
-        Debug.Log("Took it like a champ");
+        // Debug.Log("Took it like a champ");
     }
 }

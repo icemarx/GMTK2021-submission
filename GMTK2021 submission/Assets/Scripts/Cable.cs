@@ -12,7 +12,6 @@ public class Cable : PC
     
 
     public override void Hit(float damage) {
-        Debug.Log("HIT!");
         GM.player.CableHit(damage);
     }
 }
