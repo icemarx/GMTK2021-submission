@@ -27,9 +27,16 @@ public class GameManager : MonoBehaviour
     public int score = 0;
     public TextMeshProUGUI score_text;
 
+    // Menu reference
+    private Pause pauseScript;
+
     private void Start() {
         UpdateScore(-score);
         StartCoroutine("AutoSpawnEnemy");
+        pauseScript = FindObjectOfType<Pause>();
+        if (pauseScript != null)
+            pauseScript.GM = this;
+
     }
 
     private void Update() {

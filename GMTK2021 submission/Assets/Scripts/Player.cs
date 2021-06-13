@@ -80,7 +80,7 @@ public class Player : PC {
         int spriteIndex = rb.velocity.y > 0.1f ? 1 : 0;
         spriteRenderer.sprite = playerSprites[spriteIndex];
 
-        if(isDashing) {
+        if(!GM.isPaused && isDashing) {
             dash_timer -= Time.deltaTime;
             if(dash_timer <= 0) {
                 StopDashing();
@@ -91,7 +91,8 @@ public class Player : PC {
 
     void FixedUpdate()
     {
-        Movement();
+        if (!GM.isPaused)
+            Movement();
     }
 
     private void Movement() {

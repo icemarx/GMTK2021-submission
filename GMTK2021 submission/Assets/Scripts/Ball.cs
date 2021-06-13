@@ -32,7 +32,7 @@ public class Ball : PC {
     }
 
     private void Update() {
-        if (Input.GetMouseButtonDown(0)) {
+        if (!GM.isPaused && Input.GetMouseButtonDown(0)) {
             Throw();
         }
         /*
