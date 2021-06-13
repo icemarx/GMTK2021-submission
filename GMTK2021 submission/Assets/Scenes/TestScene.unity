@@ -1366,6 +1366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   max_hp: 10
+  hurt_material: {fileID: 0}
 --- !u!120 &978268251
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -2380,6 +2381,26 @@ PrefabInstance:
       propertyPath: m_AutoConfigureConnectedAnchor
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2500631290414884207, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: hurt_material
+      value: 
+      objectReference: {fileID: 2100000, guid: 93dd7a353ac49e147837908167655c85, type: 2}
+    - target: {fileID: 3411166379912855024, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: hurt_material
+      value: 
+      objectReference: {fileID: 2100000, guid: 93dd7a353ac49e147837908167655c85, type: 2}
+    - target: {fileID: 5723228479881725364, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: hurt_material
+      value: 
+      objectReference: {fileID: 2100000, guid: 93dd7a353ac49e147837908167655c85, type: 2}
+    - target: {fileID: 6553902184342546940, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: hurt_material
+      value: 
+      objectReference: {fileID: 2100000, guid: 93dd7a353ac49e147837908167655c85, type: 2}
+    - target: {fileID: 8410201124352534892, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+      propertyPath: hurt_material
+      value: 
+      objectReference: {fileID: 2100000, guid: 93dd7a353ac49e147837908167655c85, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
 --- !u!1001 &2411954152729200397
@@ -2474,6 +2495,10 @@ PrefabInstance:
       propertyPath: dash_force
       value: 50000
       objectReference: {fileID: 0}
+    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
+      propertyPath: hurt_material
+      value: 
+      objectReference: {fileID: 2100000, guid: 93dd7a353ac49e147837908167655c85, type: 2}
     - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
       propertyPath: dash_timer_max
       value: 0.5

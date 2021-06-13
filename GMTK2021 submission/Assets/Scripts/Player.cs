@@ -21,6 +21,7 @@ public class Player : PC {
     private Ball ball;
 
     // cable
+    private Cable[] cable_parts;
     [SerializeField]
     private GameObject cable_all;
     public float cable_hp_max = 10;
@@ -54,6 +55,8 @@ public class Player : PC {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         ball = GM.ball;
+        cable_parts = FindObjectsOfType<Cable>();
+        default_material = GetComponent<SpriteRenderer>().material;
 
         // set up the ui
         hp_slider.maxValue = max_hp;
@@ -153,6 +156,9 @@ public class Player : PC {
         // update UI
         hp_slider.value = hp;
 
+        // sprite effect
+        StartCoroutine("DisplayHurtSprite");
+
         if (hp <= 0) {
             GM.Lose();
         }
@@ -166,6 +172,10 @@ public class Player : PC {
 
         if(cable_hp <= 0) {
             DisconnectCable();
+        } else {
+            foreach(Cable c in cable_parts) {
+                c.StartCoroutine("DisplayHurtSprite");
+            }
         }
     }
 
@@ -181,5 +191,11 @@ public class Player : PC {
         can_regain_stamina = false;
         cable_all.SetActive(false);
         cable_hp = 0;
+    }
+
+    IEnumerator DisplayHurtSprite() {
+        GetComponent<SpriteRenderer>().material = hurt_material;
+        yield return new WaitForSeconds(0.1f);
+        GetComponent<SpriteRenderer>().material = default_material;
     }
 }
