@@ -47,6 +47,7 @@ public class Player : PC {
 
     // Audio reference
     public AudioSource dashSFX;
+    public AudioSource hurtSFX;
 
     // Start is called before the first frame update
     void Start()
@@ -161,6 +162,7 @@ public class Player : PC {
 
         // sprite effect
         StartCoroutine("DisplayHurtSprite");
+        hurtSFX.Play();
 
         if (hp <= 0) {
             GM.Lose();
