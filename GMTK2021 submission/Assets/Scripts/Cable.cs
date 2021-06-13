@@ -5,11 +5,13 @@ using UnityEngine;
 public class Cable : PC
 {
     private GameManager GM;
+    public SpriteRenderer spriteRenderer;
+    public Sprite emptySprite;
+    public Sprite fullSprite;
     
     void Start() {
         GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
-
-        default_material = GetComponent<SpriteRenderer>().material;
+        default_material = spriteRenderer.material;
     }
     
 
@@ -18,8 +20,17 @@ public class Cable : PC
     }
 
     IEnumerator DisplayHurtSprite() {
-        GetComponent<SpriteRenderer>().material = hurt_material;
+        spriteRenderer.material = hurt_material;
         yield return new WaitForSeconds(0.1f);
-        GetComponent<SpriteRenderer>().material = default_material;
+        spriteRenderer.material = default_material;
+    }
+
+    public void SetEmptySprite(bool isEmpty) {
+        if (isEmpty) {
+            spriteRenderer.sprite = emptySprite;
+        }
+        else {
+            spriteRenderer.sprite = fullSprite;
+        }
     }
 }

@@ -21,6 +21,7 @@ public class Player : PC {
     private Ball ball;
 
     // cable
+    [SerializeField]
     private Cable[] cable_parts;
     [SerializeField]
     private GameObject cable_all;
@@ -55,7 +56,6 @@ public class Player : PC {
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         ball = GM.ball;
-        cable_parts = FindObjectsOfType<Cable>();
         default_material = GetComponent<SpriteRenderer>().material;
 
         // set up the ui
@@ -174,8 +174,11 @@ public class Player : PC {
         if(cable_hp <= 0) {
             DisconnectCable();
         } else {
+            int counter = 0;
             foreach(Cable c in cable_parts) {
+                c.SetEmptySprite(cable_hp < counter);
                 c.StartCoroutine("DisplayHurtSprite");
+                counter++;
             }
         }
     }
@@ -185,6 +188,9 @@ public class Player : PC {
         can_regain_stamina = true;
         cable_all.SetActive(true);
         cable_hp = cable_hp_max;
+        foreach(Cable c in cable_parts) {
+            c.SetEmptySprite(false);
+        }
     }
 
     public void DisconnectCable() {
@@ -192,6 +198,9 @@ public class Player : PC {
         can_regain_stamina = false;
         cable_all.SetActive(false);
         cable_hp = 0;
+        foreach(Cable c in cable_parts) {
+            c.SetEmptySprite(true);
+        }
     }
 
     IEnumerator DisplayHurtSprite() {

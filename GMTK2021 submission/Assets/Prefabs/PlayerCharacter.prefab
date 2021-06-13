@@ -115,7 +115,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -140,10 +140,16 @@ MonoBehaviour:
   hurt_material: {fileID: 2100000, guid: 93dd7a353ac49e147837908167655c85, type: 2}
   walk_speed: 5
   dash_speed: 10
-  dash_timer_max: 1
-  dash_force: 2
+  dash_timer_max: 0.5
+  dash_force: 50000
+  cable_parts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   cable_all: {fileID: 0}
-  cable_hp_max: 10
+  cable_hp_max: 5
   cable_hp: 0
   max_stamina: 100
   stamina: 100

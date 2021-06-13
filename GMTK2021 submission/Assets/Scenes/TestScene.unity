@@ -2203,6 +2203,61 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+--- !u!114 &1086420276739277096 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6553902184342546940, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+  m_PrefabInstance: {fileID: 1086420276739277095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113c7ee16f7dffa439d1760f3745a194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1086420276739277097 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3411166379912855024, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+  m_PrefabInstance: {fileID: 1086420276739277095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113c7ee16f7dffa439d1760f3745a194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1086420276739277098 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2500631290414884207, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+  m_PrefabInstance: {fileID: 1086420276739277095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113c7ee16f7dffa439d1760f3745a194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1086420276739277099 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8410201124352534892, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+  m_PrefabInstance: {fileID: 1086420276739277095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113c7ee16f7dffa439d1760f3745a194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1086420276739277100 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5723228479881725364, guid: adad895fbf3c85b4e8d76795c8ebf3fa, type: 3}
+  m_PrefabInstance: {fileID: 1086420276739277095}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113c7ee16f7dffa439d1760f3745a194, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2411954152729200397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2296,6 +2351,10 @@ PrefabInstance:
       value: 50000
       objectReference: {fileID: 0}
     - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
+      propertyPath: cable_hp_max
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
       propertyPath: hurt_material
       value: 
       objectReference: {fileID: 2100000, guid: 93dd7a353ac49e147837908167655c85, type: 2}
@@ -2307,6 +2366,30 @@ PrefabInstance:
       propertyPath: stamina_slider
       value: 
       objectReference: {fileID: 1358789495}
+    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
+      propertyPath: cable_parts.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
+      propertyPath: cable_parts.Array.data[0]
+      value: 
+      objectReference: {fileID: 1086420276739277100}
+    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
+      propertyPath: cable_parts.Array.data[1]
+      value: 
+      objectReference: {fileID: 1086420276739277099}
+    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
+      propertyPath: cable_parts.Array.data[2]
+      value: 
+      objectReference: {fileID: 1086420276739277098}
+    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
+      propertyPath: cable_parts.Array.data[3]
+      value: 
+      objectReference: {fileID: 1086420276739277097}
+    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
+      propertyPath: cable_parts.Array.data[4]
+      value: 
+      objectReference: {fileID: 1086420276739277096}
     - target: {fileID: 1623033500513478761, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
       propertyPath: m_RootOrder
       value: 3
