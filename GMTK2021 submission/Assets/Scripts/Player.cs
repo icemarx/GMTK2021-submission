@@ -63,6 +63,8 @@ public class Player : PC {
         hp_slider.value = hp;
         stamina_slider.maxValue = max_stamina;
         stamina_slider.value = stamina;
+
+        ConnectCable();
     }
 
     private void Update() {
@@ -176,7 +178,7 @@ public class Player : PC {
         } else {
             int counter = 0;
             foreach(Cable c in cable_parts) {
-                c.SetEmptySprite(cable_hp < counter);
+                c.SetEmptySprite(cable_hp <= counter);
                 c.StartCoroutine("DisplayHurtSprite");
                 counter++;
             }
