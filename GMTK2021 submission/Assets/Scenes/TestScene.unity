@@ -2335,10 +2335,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
-      propertyPath: SPEED
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
       propertyPath: cable_all
       value: 
       objectReference: {fileID: 1173270523}
@@ -2347,29 +2343,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1599595162}
     - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
-      propertyPath: dash_force
-      value: 50000
-      objectReference: {fileID: 0}
-    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
-      propertyPath: cable_hp_max
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
-      propertyPath: hurt_material
-      value: 
-      objectReference: {fileID: 2100000, guid: 93dd7a353ac49e147837908167655c85, type: 2}
-    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
-      propertyPath: dash_timer_max
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
       propertyPath: stamina_slider
       value: 
       objectReference: {fileID: 1358789495}
-    - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
-      propertyPath: cable_parts.Array.size
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
       propertyPath: cable_parts.Array.data[0]
       value: 
@@ -2433,10 +2409,6 @@ PrefabInstance:
     - target: {fileID: 1623033500513478761, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2206150457386640961, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
-      propertyPath: m_Mass
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5030320237767279395, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
       propertyPath: m_Name
