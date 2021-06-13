@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     private float spawn_time_diviation = 1.5f;
     [SerializeField]
     private int max_enemy_num = 10;
+    [SerializeField]
+    private float min_spawn_distance = 2;
 
     // map data
     private static readonly float MAX_X = 6;
@@ -60,7 +62,12 @@ public class GameManager : MonoBehaviour
     }
 
     public void SpawnEnemy() {
-        Instantiate(enemy_types[0], GetRandomPointInView(), Quaternion.identity);
+        Vector3 point = GetRandomPointInView();
+        while(Vector3.Distance(point, player.transform.position) < min_spawn_distance) {
+            point = GetRandomPointInView();
+        }
+
+        Instantiate(enemy_types[0], point, Quaternion.identity);
     }
 
     public Vector2 GetRandomPointInView() {
