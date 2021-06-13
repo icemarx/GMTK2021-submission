@@ -2319,7 +2319,7 @@ PrefabInstance:
       objectReference: {fileID: 1599595162}
     - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
       propertyPath: dash_force
-      value: 100000
+      value: 50000
       objectReference: {fileID: 0}
     - target: {fileID: 419742773000075653, guid: 90d0babc40f46ca4bac5d5687b9ba8b7, type: 3}
       propertyPath: dash_timer_max

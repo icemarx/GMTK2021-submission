@@ -118,17 +118,27 @@ public class Player : PC {
             dashSFX.Play();
             
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector3 dir = (mousePos - transform.position).normalized;
+            Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+            Vector3 dir = (mousePos2D - new Vector2(transform.position.x, transform.position.y)).normalized;
 
             rb.velocity = Vector2.zero;
             rb.AddForce(dir * dash_force);
+
+            // TODO: affect sprite
+
             // TODO: change collisions
+            gameObject.layer = 8;
         }
     }
 
     private void StopDashing() {
         dash_timer = 0;
         isDashing = false;
+
+        // TODO: affect sprite
+
+        // TODO: change collisions
+        gameObject.layer = 7;
     }
 
     public override void Hit(float damage) {
