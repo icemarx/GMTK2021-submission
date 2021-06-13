@@ -41,10 +41,12 @@ public class Ball : PC {
         
         if (!isConnected)
             rb.velocity = rb.velocity.normalized * speed;
+        /*
         else if (Vector2.Distance(transform.position, GM.player.transform.position) > GM.cable_length) {
             Vector2 dir = (GM.player.transform.position - transform.position).normalized;
             rb.velocity = dir * GM.player.walk_speed;
         }
+        */
 
         spriteRenderer.flipX = rb.velocity.x > 0.1f;
         int spriteIndex = rb.velocity.y > 0.1f ? 1 : 0;
