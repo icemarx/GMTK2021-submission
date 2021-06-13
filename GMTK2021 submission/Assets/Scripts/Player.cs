@@ -133,7 +133,7 @@ public class Player : PC {
     }
 
     public void CableHit(float damage) {
-        cable_hp = Mathf.Max(0, hp - damage);
+        cable_hp = Mathf.Max(0, cable_hp - damage);
         Debug.Log(cable_hp);
 
         // update UI?
