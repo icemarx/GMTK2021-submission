@@ -16,7 +16,7 @@ public class E_Bob : Enemy {
     private GameObject turret;
 
     public AudioSource shootSFX;
-    public AudioSource  deathSFX;
+    public GameObject deathFX;
 
     private void Start() {
         GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
@@ -48,7 +48,9 @@ public class E_Bob : Enemy {
     }
 
     private void OnDestroy() {
-        deathSFX.Play(); // doesn't work cause it gets destroyed before you hear the sound
+        
+        Instantiate(deathFX, this.transform.position, Quaternion.identity);
+
         GM.UpdateScore(worth);
     }
 }

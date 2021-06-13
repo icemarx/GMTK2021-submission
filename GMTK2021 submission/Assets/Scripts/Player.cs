@@ -65,8 +65,8 @@ public class Player : PC {
             }
         }
 
-        spriteRenderer.flipX = rb.velocity.x > 0f;
-        int spriteIndex = rb.velocity.y > 0f ? 1 : 0;
+        spriteRenderer.flipX = rb.velocity.x > 0.1f;
+        int spriteIndex = rb.velocity.y > 0.1f ? 1 : 0;
         spriteRenderer.sprite = playerSprites[spriteIndex];
 
         if(isDashing) {

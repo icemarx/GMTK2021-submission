@@ -136,14 +136,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57b38b98885cf5a44aa8863f2af1b3f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  max_hp: 10
   walk_speed: 5
   dash_speed: 10
+  dash_timer_max: 1
   max_stamina: 100
   stamina: 100
   toss_cost: 20
   dash_cost: 10
   gain_stamina: 0.1
   can_regain_stamina: 1
+  hp_slider: {fileID: 0}
+  stamina_slider: {fileID: 0}
   playerSprites:
   - {fileID: 21300000, guid: a90ea40b4e42b2a46abcc0707d9b9449, type: 3}
   - {fileID: 21300000, guid: 15a55602b00e7e2498f307492dfe08b5, type: 3}
@@ -160,7 +164,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24301952, guid: 0ac7fb39e445048d89688f69c2a1839a, type: 2}
   m_audioClip: {fileID: 8300000, guid: f330560a3370983429e029f1b9df7411, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0
