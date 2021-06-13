@@ -124,9 +124,12 @@ public class Player : PC {
             rb.velocity = Vector2.zero;
             rb.AddForce(dir * dash_force);
 
-            // TODO: affect sprite
+            // affect sprite
+            Color sprite_c = GetComponent<SpriteRenderer>().color;
+            sprite_c = new Color(sprite_c.r, sprite_c.g, sprite_c.b, sprite_c.a / 2);
+            GetComponent<SpriteRenderer>().color = sprite_c;
 
-            // TODO: change collisions
+            // change collisions
             gameObject.layer = 8;
         }
     }
@@ -135,9 +138,12 @@ public class Player : PC {
         dash_timer = 0;
         isDashing = false;
 
-        // TODO: affect sprite
+        // affect sprite
+        Color sprite_c = GetComponent<SpriteRenderer>().color;
+        sprite_c = new Color(sprite_c.r, sprite_c.g, sprite_c.b, sprite_c.a * 2);
+        GetComponent<SpriteRenderer>().color = sprite_c;
 
-        // TODO: change collisions
+        // change collisions
         gameObject.layer = 7;
     }
 
