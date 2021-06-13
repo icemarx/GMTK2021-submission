@@ -83,6 +83,8 @@ public class Ball : PC {
             speed = throw_speed;
             isConnected = false;
             GM.player.can_regain_stamina = false;
+
+            GM.player.DisconnectCable();
         }
     }
 
@@ -93,7 +95,7 @@ public class Ball : PC {
             isConnected = true;
             GM.player.can_regain_stamina = true;
 
-            // TODO
+            GM.player.ConnectCable();
         }
     }
 
