@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private float mean_spawn_time = 3;
     private float spawn_time_diviation = 1.5f;
+    [SerializeField]
+    private int max_enemy_num = 10;
 
     // map data
     private static readonly float MAX_X = 6;
@@ -43,7 +45,8 @@ public class GameManager : MonoBehaviour
             float t = mean_spawn_time + Random.Range(-spawn_time_diviation, spawn_time_diviation);
             yield return new WaitForSeconds(t);
 
-            SpawnEnemy();
+            // count turrets
+            if(GameObject.FindGameObjectsWithTag("Enemy").Length < max_enemy_num) SpawnEnemy();
         }
     }
 
