@@ -15,6 +15,7 @@ public class Ball : PC {
     private float throw_speed = 3;
     private Rigidbody2D rb;
     public bool isConnected = true;
+    public bool isAttackMode = false;
 
     // sprite references
     private SpriteRenderer spriteRenderer;
@@ -64,14 +65,14 @@ public class Ball : PC {
         if(collision.gameObject.CompareTag("Player")) {
             // connect
             PickUp();
-        } else if(collision.gameObject.CompareTag("Enemy")) {
+        } else if(isAttackMode && collision.gameObject.CompareTag("Enemy")) {
             Destroy(collision.gameObject);
         }
     }
 
     public void Throw() {
         if (isConnected && GM.player.stamina >= GM.player.toss_cost) {
-            Debug.Log("THROW");
+            // Debug.Log("THROW");
             GM.player.UpdateStamina(-GM.player.toss_cost);
 
             // start velocity
@@ -81,19 +82,18 @@ public class Ball : PC {
 
             rb.velocity = dir;
             speed = throw_speed;
-            isConnected = false;
-            GM.player.can_regain_stamina = false;
+
+            isAttackMode = true;
+            GM.player.DisconnectCable();
         }
     }
 
     public void PickUp() {
         if (!isConnected) {
-            Debug.Log("PICK UP");
+            // Debug.Log("PICK UP");
 
-            isConnected = true;
-            GM.player.can_regain_stamina = true;
-
-            // TODO
+            isAttackMode = false;
+            GM.player.ConnectCable();
         }
     }
 

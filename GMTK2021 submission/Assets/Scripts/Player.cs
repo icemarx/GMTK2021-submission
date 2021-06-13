@@ -18,6 +18,12 @@ public class Player : PC {
     // ball
     private Ball ball;
 
+    // cable
+    [SerializeField]
+    private GameObject cable_all;
+    public float cable_hp_max = 10;
+    public float cable_hp = 0;
+
     // stamina
     public float max_stamina = 100;
     public float stamina = 100;
@@ -124,5 +130,30 @@ public class Player : PC {
         if (hp <= 0) {
             GM.Lose();
         }
+    }
+
+    public void CableHit(float damage) {
+        cable_hp = Mathf.Max(0, hp - damage);
+        Debug.Log(cable_hp);
+
+        // update UI?
+
+        if(cable_hp <= 0) {
+            DisconnectCable();
+        }
+    }
+
+    public void ConnectCable() {
+        ball.isConnected = true;
+        can_regain_stamina = true;
+        cable_all.SetActive(true);
+        cable_hp = cable_hp_max;
+    }
+
+    public void DisconnectCable() {
+        ball.isConnected = false;
+        can_regain_stamina = false;
+        cable_all.SetActive(false);
+        cable_hp = 0;
     }
 }
