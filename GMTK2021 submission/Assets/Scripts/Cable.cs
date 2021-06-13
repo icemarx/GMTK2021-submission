@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Cable : PC
 {
-    public Player player;
-    public Ball ball;
+    private GameManager GM;
     
     void Start() {
+        GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
     
 
     public override void Hit(float damage) {
-        throw new System.NotImplementedException();
+        Debug.Log("HIT!");
+        GM.player.CableHit(damage);
     }
 }
